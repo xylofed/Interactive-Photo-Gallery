@@ -1,0 +1,16 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc"]
+  },
+  "source": {
+    "include": ["src"],
+    "includePattern": ".+\\.js$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "opts": {
+    "destination": "./docs",
+    "recurse": true,
+    "verbose": true
+  }
+}

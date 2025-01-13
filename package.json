@@ -1,0 +1,37 @@
+{
+  "name": "gallery",
+  "version": "1.0.0",
+  "description": "Galeria zdjęć, z wyszukiwarką i trybem modalnym",
+  "main": "skrypt.js",
+  "scripts": {
+    "doc": "jsdoc -c jsdoc.json",
+    "jsdoc": "jsdoc -c jsdoc.json"
+  },
+  "keywords": [
+    "jsdoc",
+    "documentation"
+  ],
+  "author": "Sebastian Król",
+  "license": "ISC",
+  "devDependencies": {
+    "jsdoc": "^4.0.4"
+  },
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": [
+      "jsdoc"
+    ]
+  },
+  "source": {
+    "include": [
+      "src"
+    ],
+    "includePattern": ".+\\.js$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "opts": {
+    "destination": "./docs",
+    "recurse": true,
+    "verbose": true
+  }
+}
